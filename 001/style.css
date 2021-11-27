@@ -51,7 +51,7 @@ img {
 .scroll-bar {
   position: absolute;
   bottom: 0;
-  left: 70%;
+  left: 92%;
   width: 10px;
   height: 100px;
   border-right: 2px solid #444;
@@ -71,7 +71,7 @@ img {
 .scroll-text {
   position: absolute;
   bottom: 9%;
-  left: 75%;
+  right: 8%;
   color: #444;
   font: normal 70% Consolas, Monaco, monospace;
   width: auto;
@@ -99,6 +99,13 @@ img {
 }
 
 /* ------------ my gallery ----------- */
+.mygallery h2 {
+  margin: 2rem;
+  font-size: 3rem;
+  text-align: center;
+  letter-spacing: 2rem;
+  font-family: cursive;
+}
 .gals {
   /* display: flex; */
   overflow: hidden;
@@ -111,7 +118,6 @@ img {
   height: 200px;
   background-color: cadetblue;
   position: relative;
-  transition: 5s;
 }
 .gal-text {
   padding: 0.5rem 0;
@@ -119,12 +125,14 @@ img {
   background-color: rgba(68, 68, 68, 0.4);
   position: absolute;
   bottom: 0;
+  transition: 1s;
 }
 .gal1:hover .gal-text,
 .gal2:hover .gal-text,
 .gal3:hover .gal-text {
   height: 200px;
 }
+
 /* ------------ pc ----------- */
 @media (min-width: 640px) {
   .top-img {
@@ -136,5 +144,32 @@ img {
     top: 30%;
     left: 70%;
     font: bold 200% Consolas, Monaco, monospace;
+  }
+  .scroll-bar {
+    left: 85%;
+  }
+  .scroll-ball {
+    left: 50%;
+  }
+  .scroll-text {
+    right: 8%;
+  }
+
+  .gals {
+    display: flex;
+    justify-content: center;
+  }
+  .gal1,
+  .gal2,
+  .gal3 {
+    margin: 1rem;
+  }
+  .gal-text {
+    transition: 1s;
+  }
+  .gal1:hover .gal-text,
+  .gal2:hover .gal-text,
+  .gal3:hover .gal-text {
+    height: 200px;
   }
 }
