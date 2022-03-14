@@ -16,16 +16,12 @@ function App() {
     let displayHeight = target.target.offsetHeight;
     setImgScale(Math.floor((scrolledVal / displayHeight) * 100));
 
-    // if (imgScale >= 100 && imgScale < 1500) {
     if (imgScale >= 100) {
       setBgScrollVal(imgScale - 99);
     }
   };
   const imgScalePer = (1 + imgScale) / 100;
 
-  if (imgScale >= 100 && imgScale < 1500) {
-    // setBgScrollVal(imgScale - 99);
-  }
 
   return (
     <div className="App">
